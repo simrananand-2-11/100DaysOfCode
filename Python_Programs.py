@@ -38,3 +38,27 @@ print("Maximum is %d"%maxi)
 
 #________________________________________________________________________________________________________________________________________________________________________
 
+# 3. Define a function that computes the length of a given list or string.
+# (It is true that Python has the len() function built in, but writing it yourself is nevertheless a good exercise.)
+
+count = 0
+stri = eval(input("Enter a string: "))
+for i in stri:
+    count = count + 1
+print("Size is %d"%count)
+
+
+#________________________________________________________________________________________________________________________________________________________________________
+
+# 4.Write a function that takes a character (i.e. a string of length 1) and returns True if it is a vowel, False otherwise
+
+def check_vowel_true(a):
+    if(a=='a' or a=='A' or a=='e' or a=='E' or a=='i' or a=='I' or a=='o' or a=='O' or a=='u' or a=='U'):
+        return True
+    else:
+        return False
+a = str(input("Enter a character: "))
+b = check_vowel_true(a)
+print("Value is ", b)
+
+#__________________________________________________________________________________________________________________________________________________________________________

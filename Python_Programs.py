@@ -62,3 +62,54 @@ b = check_vowel_true(a)
 print("Value is ", b)
 
 #__________________________________________________________________________________________________________________________________________________________________________
+# Write a  program to print pyramid using star
+'''
+# Range of the triangle
+num = int(input("Enter the range: \t "))
+# i loop for range(height) of the triangle
+# first j loop for printing space ' '
+# second j loop for printing stars '*'
+for i in range(num):
+    for j in range((num - i) - 1):
+        print(end=" ")
+    for j in range(i + 1):
+        print("*", end=" ")
+    print()'''
+#______________________________________________________________________________________________________________________________________
+# WAP to check whether the given number is armstrong or not.
+'''
+num = int(input("Enter a number: "))  
+sum = 0  
+temp = num  
+  
+while temp > 0:  
+   digit = temp % 10  
+   sum += digit ** 3  
+   temp //= 10  
+  
+if num == sum:  
+   print(num,"is an Armstrong number")  
+else:  
+   print(num,"is not an Armstrong number")
+   '''
+
+#______________________________________________________________________________________________________________________________________________
+# WAP to do sum of squares of first N natural numbers.
+
+# find sum of square of first n natural numbers
+# Return the sum ofsquare of first nnatural numbers
+def squaresum(n) :
+ 
+    # Iterate i from 1 and n finding square of i and add to sum.
+    sm = 0
+    for i in range(1, n+1) :
+        sm = sm + (i * i)
+     
+    return sm
+ 
+# Driven Program
+n = eval(input("Enter a number"))
+print(squaresum(n))
+
+#_____________________________________________________________________________________________________________________________________________________________
+
